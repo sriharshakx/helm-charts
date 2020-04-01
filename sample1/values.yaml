@@ -15,7 +15,7 @@ imagePullSecrets:
 
 configMaps:
   - configMapRef:
-    name: special-config
+      name: special-config
 nameOverride: ""
 fullnameOverride: ""
 
