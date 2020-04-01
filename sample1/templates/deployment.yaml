@@ -16,7 +16,7 @@ spec:
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
-        {{ include "toYaml" $value | indent 2 }}
+        - name: {{ include "toYaml" $name }}
         //- name: {{- toYaml . | nindent 8 }}
     {{- end }}
       serviceAccountName: {{ include "sample1.serviceAccountName" . }}
