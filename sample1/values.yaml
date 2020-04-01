@@ -18,6 +18,7 @@ configMaps:
       name: global-cm
   - configMapRef:
       name: s1-cm
+
 nameOverride: ""
 fullnameOverride: ""
 
