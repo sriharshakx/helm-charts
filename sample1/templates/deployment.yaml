@@ -16,8 +16,8 @@ spec:
     spec:
     //{{- with .Values.imagePullSecrets }}
       imagePullSecrets:
-        {{- range .Values.imagePullSecrets }}
-        - {{ . }}
+        {{- range $ex .Values.imagePullSecrets }}
+        - {{ $ex }}
         {{- end }}
     //{{- end }}
       serviceAccountName: {{ include "sample1.serviceAccountName" . }}
