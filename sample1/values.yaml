@@ -21,8 +21,9 @@ imagePullSecrets:
 
 configMaps:
   - name: "Global Config" 
-    global-cm
-  - name: s1-cm 
+    mapName: global-cm
+  - name: 
+    s1-cm 
 
 
 nameOverride: ""
