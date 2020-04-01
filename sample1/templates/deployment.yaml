@@ -33,7 +33,6 @@ spec:
               - configMapRef:
                 name: {{$val}}
              {{- end }}
-
           {{- end }}
           ports:
             - name: http
