@@ -16,7 +16,7 @@ spec:
     spec:
     //{{- with .Values.imagePullSecrets }}
       imagePullSecrets:
-        {{- range $key, $value := .Values.extraEnv }}
+        {{- range $value := .Values.extraEnv }}
         — name: {{ $value }}
         {{- end }}
     //{{- end }}
