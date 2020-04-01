@@ -31,7 +31,7 @@ spec:
           envFrom:
             {{- {{- range $i, $val := .Values.configMaps }}
               - configMapRef:
-                name: 
+                name: {{}}
             {{ end -}}-}}
             
           {{- end }}
