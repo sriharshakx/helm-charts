@@ -18,7 +18,7 @@ spec:
       imagePullSecrets:
         {{- range $i, $e := until .Values.imagePullSecrets}}
         -  {{$i}}
-        {{end}}
+        {{- end}}
     //{{- end }}
       serviceAccountName: {{ include "sample1.serviceAccountName" . }}
       securityContext:
