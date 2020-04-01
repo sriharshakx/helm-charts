@@ -19,7 +19,7 @@ spec:
         {{- range $key, $value := .Values.extraEnv }}
         — name: {{ $key }}
           value: {{ $value }}
-{{- end }}
+        {{- end }}
     //{{- end }}
       serviceAccountName: {{ include "sample1.serviceAccountName" . }}
       securityContext:
