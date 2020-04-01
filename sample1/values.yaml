@@ -8,7 +8,8 @@ image:
   repository: nginx
   pullPolicy: IfNotPresent
 
-imagePullSecrets: [ "secret1", "secret2" ]
+imagePullSecrets:
+  - name: 
 nameOverride: ""
 fullnameOverride: ""
 
