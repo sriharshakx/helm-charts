@@ -22,7 +22,7 @@ imagePullSecrets:
 configMaps:
   - name: "Global Config" 
     mapName: global-cm
-  - name: 
+  - name: "Env Config" 
     s1-cm 
 
 
