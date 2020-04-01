@@ -33,7 +33,7 @@ spec:
               - configMapRef:
                 name: {{ .mapName}}
              {{- end }}
-          {{- end }}
+//          {{- end }}
           ports:
             - name: http
               containerPort: 80
