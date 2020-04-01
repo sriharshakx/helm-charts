@@ -27,7 +27,7 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          {{- with .Values.configMaps }}
+//          {{- with .Values.configMaps }}
           envFrom:
              {{- range  .Values.configMaps }}
               - configMapRef:
