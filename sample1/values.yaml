@@ -20,8 +20,8 @@ imagePullSecrets:
 #      name: s1-cm 
 
 configMaps:
-  - name: global-cm
-  
+  - mapName: global-cm
+  - name: s1-cm 
 
 
 nameOverride: ""
