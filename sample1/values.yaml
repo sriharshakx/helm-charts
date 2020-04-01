@@ -10,7 +10,7 @@ image:
 
 imagePullSecrets:
   - name: Secert1
-  - name: Secret2
+  - name: foobar
 nameOverride: ""
 fullnameOverride: ""
 
