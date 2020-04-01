@@ -13,7 +13,8 @@ imagePullSecrets:
   - name: foobar
 
 
-
+configMaps:
+ 
 nameOverride: ""
 fullnameOverride: ""
 
