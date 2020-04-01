@@ -29,6 +29,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           {{- with .Values.configMaps }}
           envFrom:
+            {{- range-}}
             - configMapRef:
                 name: 
           {{- end }}
