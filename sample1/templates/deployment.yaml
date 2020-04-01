@@ -16,7 +16,7 @@ spec:
     spec:
     //{{- with .Values.imagePullSecrets }}
       imagePullSecrets:
-        {{- range .Values.imagePullSecrets }}
+        {{- range ".Values.imagePullSecrets" }}
         - {{ . }}
         {{- end }}
     //{{- end }}
