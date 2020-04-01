@@ -31,7 +31,7 @@ spec:
           envFrom:
              {{- range $key, $value := .Values.configMaps }}
               - configMapRef:
-                name: {{$}}
+                name: {{$value.mapName}}
              {{- end }}
           {{- end }}
           ports:
