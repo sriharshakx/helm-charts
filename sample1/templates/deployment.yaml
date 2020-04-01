@@ -32,7 +32,7 @@ spec:
              {{- range $i, $val := .Values.configMaps }}
               - configMapRef:
                 name: {{$val}}
-            {{ end -}}
+            {{-- end }}
             
           {{- end }}
           ports:
