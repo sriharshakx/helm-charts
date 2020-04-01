@@ -14,10 +14,15 @@ spec:
       labels:
         {{- include "sample1.selectorLabels" . | nindent 8 }}
     spec:
+    //{{- with .Values.imagePullSecrets }}
       imagePullSecrets:
-        {{- range $ex := .Values.imagePullSecrets }}
-        - {{ $ex }}
-        {{- end }}
+        {{range $i, $e := until .Values.replicas}}
+        -  {{$i}}
+        {{end}}
+        // {{ range $value, $e := .Values.imagePullSecrets }}
+        // - name: {{ $value }}
+        // {{- end }}
+    //{{- end }}
       serviceAccountName: {{ include "sample1.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
