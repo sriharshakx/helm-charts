@@ -16,7 +16,7 @@ spec:
     spec:
     //{{- with .Values.imagePullSecrets }}
       imagePullSecrets:
-        - name: {{- toYaml . | nindent 8 }}
+        - name: {{ .Values.image.pullSecret }}
     //{{- end }}
       serviceAccountName: {{ include "sample1.serviceAccountName" . }}
       securityContext:
