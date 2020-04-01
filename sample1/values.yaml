@@ -13,11 +13,11 @@ imagePullSecrets:
   - name: foobar
 
 
-#configMaps:
-#  - configMapRef:
-#      name: global-cm
-#  - configMapRef:
-#      name: s1-cm 
+configMaps:
+  - configMapRef:
+      name: global-cm
+  - configMapRef:
+      name: s1-cm 
 
 
 nameOverride: ""
