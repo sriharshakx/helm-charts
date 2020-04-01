@@ -23,7 +23,7 @@ configMaps:
   - name: "Global Config" 
     mapName: global-cm
   - name: "Env Config" 
-    s1-cm 
+    mapName: s1-cm 
 
 
 nameOverride: ""
