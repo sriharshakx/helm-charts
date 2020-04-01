@@ -29,7 +29,8 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           {{- with .Values.configMaps }}
           envFrom:
-            {{- toYaml . | nindent 12 }}
+            - configMapRef:
+                name: 
           {{- end }}
           ports:
             - name: http
