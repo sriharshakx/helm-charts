@@ -29,11 +29,11 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           {{- with .Values.configMaps }}
           envFrom:
-            {{- {{- range $i, $val := .Values. }}
-              
-            {{ end -}}-}}
-            - configMapRef:
+            {{- {{- range $i, $val := .Values.configMaps }}
+              - configMapRef:
                 name: 
+            {{ end -}}-}}
+            
           {{- end }}
           ports:
             - name: http
