@@ -14,7 +14,7 @@ spec:
       labels:
         {{- include "sample1.selectorLabels" . | nindent 8 }}
     spec:
-    {{- with .Values.imagePullSecrets }}
+    //{{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         - name: {{ include "toYaml" $name }}
         //- name: {{- toYaml . | nindent 8 }}
