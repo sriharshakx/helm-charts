@@ -16,7 +16,10 @@ spec:
     spec:
     //{{- with .Values.imagePullSecrets }}
       imagePullSecrets:
-        
+        {{- range $key, $value := .Values.extraEnv }}
+        — name: {{ $key }}
+          value: {{ $value }}
+{{- end }}
     //{{- end }}
       serviceAccountName: {{ include "sample1.serviceAccountName" . }}
       securityContext:
