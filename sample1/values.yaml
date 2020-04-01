@@ -19,7 +19,8 @@ imagePullSecrets:
 #  - configMapRef:
 #      name: s1-cm 
 
-
+configMaps:
+  
 
 
 nameOverride: ""
