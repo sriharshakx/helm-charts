@@ -11,6 +11,9 @@ image:
 imagePullSecrets:
   - name: Secert1
   - name: foobar
+
+
+
 nameOverride: ""
 fullnameOverride: ""
 
